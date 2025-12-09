@@ -28,5 +28,9 @@ namespace SriKrishna.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult VltdAndroid()
+        {
+            return Redirect("https://play.google.com/store/apps/details?id=com.apmconnect.telematics");
+        }
     }
 }
